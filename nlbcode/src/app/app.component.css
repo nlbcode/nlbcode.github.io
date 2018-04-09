@@ -1,0 +1,21 @@
+a{
+  text-decoration: none;
+}
+.menuitem{
+  text-decoration: none;
+  color: #727272;
+  padding: 15px 0;
+  border-bottom: 6px solid transparent;
+  text-transform: uppercase;
+  background-color: transparent;
+  line-height: 20px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-left: 40px;
+  font-size: 13px;
+    font-weight: 550
+}
+a.menuitem:hover {
+  border-bottom-color: #42A5F5;
+}
+#logo{height: 75px;}
