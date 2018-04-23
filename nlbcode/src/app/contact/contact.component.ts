@@ -43,7 +43,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
 
   }
-  OnSubmit(form:Contact){
+  OnSubmit(form: Contact){
     console.log('you submitted value:', form);
 
   }

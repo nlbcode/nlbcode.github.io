@@ -4,7 +4,7 @@
     <input matInput placeholder="Name" [formControl]="formContact.controls['name']" [errorStateMatcher]="matcher">
     <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
 
-    <mat-error *ngIf="formContact.hasError('required','name')">
+    <mat-error *ngIf="formContact.hasError('required',['name'])">
       Name is
       <strong>required</strong>
     </mat-error>
@@ -12,10 +12,10 @@
   <mat-form-field class="example-full-width">
     <input matInput placeholder="Email" [formControl]="formContact.controls['email']" [errorStateMatcher]="matcher">
     <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
-    <mat-error *ngIf="formContact.hasError('email','email') && !formContact.hasError('required','email')">
+    <mat-error *ngIf="formContact.hasError('email',['email']) && !formContact.hasError('required',['email'])">
       Please enter a valid email address
     </mat-error>
-    <mat-error *ngIf="formContact.hasError('required','email')">
+    <mat-error *ngIf="formContact.hasError('required',['email'])">
       Name is
       <strong>required</strong>
     </mat-error>
@@ -24,7 +24,7 @@
     <input matInput placeholder="Subject" [formControl]="formContact.controls['subject']" [errorStateMatcher]="matcher">
     <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
 
-    <mat-error *ngIf="formContact.hasError('required','subject')">
+    <mat-error *ngIf="formContact.hasError('required',['subject'])">
       Subject is
       <strong>required</strong>
     </mat-error>
@@ -34,7 +34,7 @@
 
     <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
 
-    <mat-error *ngIf="formContact.hasError('required','message')">
+    <mat-error *ngIf="formContact.hasError('required',['message'])">
       Message is
       <strong>required</strong>
     </mat-error>
